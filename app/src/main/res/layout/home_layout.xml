@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="false">
+
+    <LinearLayout
+        android:id="@+id/backdrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorAccent"
+        android:clipToPadding="false"
+        android:gravity="top|start"
+        android:orientation="vertical"
+        android:paddingTop="55dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:clickable="false"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp">
+
+        </LinearLayout>
+        <!-- Science -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_red_dark"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="top"
+            android:onClick="ScienceView"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageButton
+                android:id="@+id/imageViewScience"
+                android:layout_width="@dimen/btn_margin"
+                android:layout_height="@dimen/btn_margin"
+                android:layout_gravity="center"
+                android:contentDescription="@string/todo"
+                android:cropToPadding="false"
+                app:srcCompat="@mipmap/ic_s_btn" />
+
+            <TextView
+                android:id="@+id/txtScience"
+                android:layout_width="288dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:ems="10"
+                android:padding="10dp"
+                android:text="@string/txtScience"
+                android:textColor="@color/gray" />
+
+        </LinearLayout>
+        <!-- Math -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_orange_light"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="top"
+            android:onClick="MathView"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageButton
+                android:id="@+id/imageViewMath"
+                android:layout_width="@dimen/btn_margin"
+                android:layout_height="@dimen/btn_margin"
+                android:layout_gravity="center"
+                android:contentDescription="@string/todo"
+                app:srcCompat="@mipmap/ic_m_btn" />
+
+            <TextView
+                android:id="@+id/txtMath"
+                android:layout_width="288dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:ems="10"
+                android:padding="10dp"
+                android:text="@string/txtMath" />
+
+        </LinearLayout>
+        <!-- Arts -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorYellow"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="top"
+            android:onClick="ArtsView"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageButton
+                android:id="@+id/imageViewArts"
+                android:layout_width="@dimen/btn_margin"
+                android:layout_height="@dimen/btn_margin"
+                android:layout_gravity="center"
+                android:contentDescription="@string/todo"
+                app:srcCompat="@mipmap/ic_a_btn" />
+
+            <TextView
+                android:id="@+id/txtArts"
+                android:layout_width="288dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:ems="10"
+                android:padding="10dp"
+                android:text="@string/txtArts" />
+
+        </LinearLayout>
+        <!-- Reading -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorGreen"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="top"
+            android:onClick="ReadingView"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageButton
+                android:id="@+id/imageViewReading"
+                android:layout_width="@dimen/btn_margin"
+                android:layout_height="@dimen/btn_margin"
+                android:layout_gravity="center"
+                android:contentDescription="@string/todo"
+                app:srcCompat="@mipmap/ic_r_btn" />
+
+            <TextView
+                android:id="@+id/txtReading"
+                android:layout_width="288dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:ems="10"
+                android:padding="10dp"
+                android:text="@string/txtReading" />
+
+        </LinearLayout>
+        <!-- Technology -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_light"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="top"
+            android:onClick="TechnologyView"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageButton
+                android:id="@+id/imageViewTechnology"
+                android:layout_width="@dimen/btn_margin"
+                android:layout_height="@dimen/btn_margin"
+                android:layout_gravity="center"
+                android:contentDescription="@string/todo"
+                app:srcCompat="@mipmap/ic_t_btn" />
+
+            <TextView
+                android:id="@+id/txtTechnology"
+                android:layout_width="288dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:ems="10"
+                android:padding="10dp"
+                android:text="@string/txtTechnology" />
+
+        </LinearLayout>
+        <!-- Social Studies -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_purple"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="top"
+            android:onClick="SocialStudiesView"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageButton
+                android:id="@+id/imageViewSocialStudies"
+                android:layout_width="@dimen/btn_margin"
+                android:layout_height="@dimen/btn_margin"
+                android:layout_gravity="center"
+                android:contentDescription="@string/todo"
+                app:srcCompat="@mipmap/ic_ss_btn" />
+
+            <TextView
+                android:id="@+id/txtSocialStudies"
+                android:layout_width="288dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:ems="10"
+                android:paddingEnd="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingStart="10dp"
+                android:text="@string/txtSocialStudies" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:clickable="false"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtNickName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:text="@string/nicknametxt"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtTime"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/timetxt"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/backdrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:background="@color/colorAccent"
+        android:gravity="end"
+        android:orientation="vertical">
+
+        <!-- being S M A -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <!-- S Science -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/holo_red_light"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="35dp"
+                android:paddingTop="10dp">
+
+                <ImageButton
+                    android:id="@+id/imageViewScience"
+                    android:layout_width="@dimen/btn_marginwide"
+                    android:layout_height="@dimen/btn_marginwide"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/todo"
+                    android:cropToPadding="false"
+                    android:keepScreenOn="false"
+                    android:onClick="ScienceView"
+                    android:soundEffectsEnabled="false"
+                    app:srcCompat="@mipmap/ic_s_btn" />
+
+                <TextView
+                    android:id="@+id/sText2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:onClick="gotoScienceLayout"
+                    android:text="@string/txtScience"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+            <!-- M -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/holo_orange_light"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="35dp"
+                android:paddingTop="10dp">
+
+                <ImageButton
+                    android:id="@+id/imageViewMath"
+                    android:layout_width="@dimen/btn_marginwide"
+                    android:layout_height="@dimen/btn_marginwide"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="false"
+                    android:contentDescription="@string/todo"
+                    android:onClick="MathView"
+                    app:srcCompat="@mipmap/ic_m_btn" />
+
+                <TextView
+                    android:id="@+id/mathText2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:onClick="gotoMathLayoutLayout"
+                    android:text="@string/txtMath" />
+
+            </LinearLayout>
+
+            <!-- A -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorYellow"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="35dp"
+                android:paddingTop="10dp">
+
+                <ImageButton
+                    android:id="@+id/imageViewArts"
+                    android:layout_width="@dimen/btn_marginwide"
+                    android:layout_height="@dimen/btn_marginwide"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/todo"
+                    android:onClick="ArtsView"
+                    app:srcCompat="@mipmap/ic_a_btn" />
+
+                <TextView
+                    android:id="@+id/artText2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:onClick="gotoArtsLayout"
+                    android:text="@string/txtArts" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <!-- end S M A -->
+        <!-- being R T S -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+            <!-- R Reading -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorGreen"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="35dp"
+                android:paddingTop="10dp">
+
+                <ImageButton
+                    android:id="@+id/imageViewReading"
+                    android:layout_width="@dimen/btn_marginwide"
+                    android:layout_height="@dimen/btn_marginwide"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/todo"
+                    android:onClick="ReadingView"
+                    app:srcCompat="@mipmap/ic_r_btn" />
+
+                <TextView
+                    android:id="@+id/rText2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:onClick="gotoReadingLayout"
+                    android:text="@string/txtReading" />
+
+            </LinearLayout>
+            <!-- T Technology -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/holo_blue_light"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="35dp"
+                android:paddingTop="10dp">
+
+                <ImageButton
+                    android:id="@+id/imageViewTechnology"
+                    android:layout_width="@dimen/btn_marginwide"
+                    android:layout_height="@dimen/btn_marginwide"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/todo"
+                    android:onClick="TechnologyView"
+                    app:srcCompat="@mipmap/ic_t_btn" />
+
+                <TextView
+                    android:id="@+id/tText2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:onClick="gotoTechnologyLayout"
+                    android:text="@string/txtTechnology" />
+
+            </LinearLayout>
+            <!-- SS -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/holo_purple"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="35dp"
+                android:paddingTop="10dp">
+
+                <ImageButton
+                    android:id="@+id/imageViewSocialStudies"
+                    android:layout_width="@dimen/btn_marginwide"
+                    android:layout_height="@dimen/btn_marginwide"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/todo"
+                    android:onClick="SocialStudiesView"
+                    app:srcCompat="@mipmap/ic_ss_btn" />
+
+                <TextView
+                    android:id="@+id/Text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:onClick="gotoSocialStudiesLayout"
+                    android:text="@string/txtSocialStudies" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <!-- end R T S -->
+        <!-- begin custom-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/txtNickName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/nicknametxt"
+                android:textAlignment="center"
+                android:textColor="@color/ic_app_background"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txtTime"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:text="@string/timetxt"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textColor="@color/ic_app_background"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <!-- end custom-->
+
+    </LinearLayout>
+
+</RelativeLayout>

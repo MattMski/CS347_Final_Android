@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/nav_technology_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="false"
+        android:layout_centerHorizontal="false"
+        android:layout_marginTop="125dp"
+        android:onClick="goToKhan"
+        android:paddingEnd="125dp"
+        android:paddingLeft="125dp"
+        android:paddingStart="125dp"
+        android:paddingTop="35dp"
+        android:text="@string/khan" />
+
+    <ImageView
+        android:id="@+id/codeImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="false"
+        android:layout_alignTop="@+id/nav_technology_layout"
+        android:clickable="true"
+        android:contentDescription="@string/hourofcodeimg"
+        android:focusable="true"
+        android:labelFor="@+id/nav_technology_layout"
+        android:onClick="goToKhan"
+        app:srcCompat="@mipmap/ic_khan_foreground" />
+
+    <ImageView
+        android:id="@+id/legoImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/codeImg"
+        android:layout_below="@+id/codeImg"
+        android:layout_marginTop="5dp"
+        android:contentDescription="@string/legoimg"
+        android:onClick="goToLego"
+        app:srcCompat="@mipmap/ic_lego_foreground" />
+
+    <TextView
+        android:id="@+id/nav_engineering_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/legoImg"
+        android:onClick="goToLego"
+        android:paddingEnd="125dp"
+        android:paddingLeft="125dp"
+        android:paddingStart="125dp"
+        android:paddingTop="35dp"
+        android:text="@string/lego" />
+
+    <TextView
+        android:id="@+id/nav_technology"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/imageHeaderTechnology"
+        android:layout_marginTop="55dp"
+        android:contentDescription="@string/hourofcodeimg"
+        android:padding="10dp"
+        android:text="@string/technology_layout" />
+
+    <ImageView
+        android:id="@+id/imageHeaderTechnology"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="false"
+        android:background="@color/ic_app_background"
+        android:contentDescription="@string/todo"
+        android:scaleType="centerCrop"
+        app:srcCompat="@mipmap/ic_technology_banner_foreground" android:layout_alignParentStart="false" />
+
+</RelativeLayout>

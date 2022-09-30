@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <group android:id="@+id/grp1" android:checkableBehavior="single" >
+        <item
+            android:id="@+id/nav_science"
+            android:icon="@drawable/ic_menu_s"
+            android:title="@string/menu_s" />
+        <item
+            android:id="@+id/nav_mathtxt"
+            android:icon="@drawable/ic_menu_m"
+            android:title="@string/menu_m" />
+        <item
+            android:id="@+id/nav_arts"
+            android:icon="@drawable/ic_menu_a"
+            android:title="@string/menu_a" />
+        <item
+            android:id="@+id/nav_reading"
+            android:icon="@drawable/ic_menu_r"
+            android:title="@string/menu_r" />
+        <item
+            android:id="@+id/nav_technology"
+            android:icon="@drawable/ic_menu_t"
+            android:title="@string/menu_t" />
+        <item
+            android:id="@+id/nav_socialstudies"
+            android:icon="@drawable/ic_ss"
+            android:title="@string/menu_ss" />
+    </group>
+
+    <group android:id="@+id/grp2" android:checkableBehavior="single" >
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_tools"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Tools"
+            android:visible="false" />
+    </group>
+
+
+</menu>
